@@ -1,0 +1,144 @@
+% Sunil Chalaune - Resume
+% Build: ./build.sh   (or: tectonic resume.tex)
+\documentclass[9pt,letterpaper]{extarticle}
+
+% ---------- Page and fonts ----------
+\usepackage[top=0.4in,bottom=0.35in,left=0.43in,right=0.43in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}          % Times-style serif, as in the template
+\usepackage{microtype}
+\usepackage[none]{hyphenat}     % no hyphenated line breaks
+\emergencystretch=2em
+\frenchspacing                   % same space after a full stop as between words
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.94}
+
+% ---------- Section heading: bold caps with a full-width rule ----------
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{\MakeUppercase}[\vspace{-6pt}\rule{\linewidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{5pt}{0pt}
+
+% ---------- Lists: small bullets, tight spacing ----------
+\setlist[itemize]{label=\raisebox{0.25ex}{\tiny$\bullet$},leftmargin=0.45in,labelsep=0.2in,
+                  itemsep=0pt,parsep=0pt,topsep=1pt,partopsep=0pt}
+
+% ---------- Helpers ----------
+\newcommand{\sep}{\,\textbar\,}
+% \entry{Bold left text}{Bold right text (dates)}
+\newcommand{\entry}[2]{\vspace{2pt}\textbf{#1}\hfill\textbf{#2}\par}
+% \skill{Label}{items}
+\newcommand{\skill}[2]{\item \textbf{#1:} #2}
+
+\begin{document}
+
+% ================= HEADER =================
+\begin{center}
+  {\fontsize{20}{23}\selectfont Sunil Chalaune}\\[4pt]
+  \textbf{MS Civil Engineering Student \sep{} Transportation Engineering \sep{} Graduate Research Assistant}\\[1pt]
+  (618) 802-3411 \sep{} \href{mailto:Sunilchalaune11@gmail.com}{Sunilchalaune11@gmail.com} \sep{}
+  \href{https://www.linkedin.com/in/sunil-chalaune-54305426}{linkedin.com/in/sunil-chalaune-54305426} \sep{}
+  \href{https://sunilchalaune.github.io}{sunilchalaune.github.io} \sep{} Reno, NV 89512
+\end{center}
+\vspace{-6pt}
+
+% ================= SUMMARY =================
+\section{Summary}
+\begin{list}{}{\leftmargin=0.1in\rightmargin=0pt\topsep=0pt\parsep=0pt\itemsep=0pt}\item
+MS Civil Engineering student specializing in Transportation Engineering at the University of Nevada, Reno, and
+Graduate Research Assistant on projects for the Nevada Department of Transportation (NDOT), the City of
+Reno/Sparks, and the City of Las Vegas. Experienced in real-time LiDAR data collection, sensor management, data extraction, and
+transportation safety analysis. Bachelor of Science in Civil Engineering from San Jose State University, with
+coursework in ITS, GIS, traffic engineering, and geometric design. Proficient in Synchro, ArcGIS Pro, AutoCAD,
+and MATLAB.
+\end{list}
+
+% ================= SKILLS =================
+\section{Areas of Expertise}
+\begin{itemize}
+  \skill{Technical}{Synchro \sep{} ArcGIS Pro \sep{} ITS \sep{} AutoCAD \sep{} MATLAB \sep{} MicroStation \sep{} Revit \sep{} MS Office \sep{} Primavera (P6) \sep{} SAP 2000}
+  \skill{Analytical}{Traffic flow analysis \sep{} ITS \sep{} Surveying \sep{} Analytical thinking \sep{} Material handling \sep{} Structural analysis}
+  \skill{Field Skills}{Data collection \sep{} LiDAR sensors \sep{} Data extraction \sep{} Simulation modeling \sep{} Data quality control \sep{} Real-time data monitoring \sep{} Transportation safety analysis}
+  \skill{Soft Skills}{Team collaboration \sep{} Communication \sep{} Problem solving \sep{} Time management}
+\end{itemize}
+
+% ================= EDUCATION =================
+\section{Education}
+\begin{itemize}
+  \item \textbf{MS Civil Engineering: Transportation Engineering}\hfill\textbf{Expected 05/2028}\\
+        University of Nevada, Reno \sep{} Reno, NV \sep{} Graduate Research Assistant \sep{} NSA committee member\\
+        Relevant Coursework: ITS, GIS, Geometric Design of Transportation System
+  \item[] \vspace{-8pt}
+  \item \textbf{Bachelor of Science: Civil Engineering}\hfill\textbf{12/2025}\\
+        San Jose State University \sep{} San Jose, CA\\
+        APAWA Civil Engineering Scholarship Award \sep{} Member, Construction Management Association of America, SJSU Chapter \sep{} NSA Secretary\\
+        Certificate: American Concrete Institute (ACI) program, Fundamentals of Concrete and Materials\\
+        Relevant Coursework: AutoCAD, MATLAB, Traffic Engineering, Transportation Engineering
+\end{itemize}
+
+% ================= WORK EXPERIENCE =================
+\section{Work Experiences}
+\entry{Graduate Research Assistant \sep{} University of Nevada, Reno \sep{} Reno, NV}{08/2026 -- Present}
+\begin{itemize}
+  \item Work as a researcher on projects for the Nevada Department of Transportation (NDOT), the City of Reno/Sparks, and the City of Las Vegas.
+  \item Conduct real-time LiDAR data collection and processing to support transportation safety analysis and roadway research.
+  \item Perform data extraction along with checking, labeling, installation, and retrieval of the sensors.
+  \item Collaborate with the research team to support NDOT transportation safety studies through field data collection, sensor management, and data extraction.
+\end{itemize}
+
+\entry{Civil Engineering Intern \sep{} Shahi Construction \sep{} Nepal}{05/2024 -- 08/2024}
+\begin{itemize}
+  \item Assisted senior engineers with on-site project work, data collection, surveying, documentation, and draft preparation.
+  \item Inspected the quality of the materials.
+\end{itemize}
+
+\entry{Tutor \sep{} Government School \sep{} Nepal}{12/2020 -- 02/2021}
+\begin{itemize}
+  \item Collaborated with students to complete homework assignments, identify lagging skills, and correct weaknesses.
+  \item Supported students with helpful study habits and exam strategies.
+  \item Provided homework assistance using specific curriculum and materials.
+\end{itemize}
+
+\entry{Club President \sep{} Social Club \sep{} Nepal}{07/2017 -- 02/2020}
+\begin{itemize}
+  \item Assisted with special events and programs (Old Age Home).
+  \item Maintained clean, neat, and operational facilities to serve program needs.
+  \item Supported engaging, fun, and smooth-running events by helping with organization and planning.
+\end{itemize}
+
+% ================= PROJECTS =================
+\section{Projects}
+\entry{US 95 Passing and No-Passing Zones on Rural Two-Lane, Two-Way Highways \sep{} University of Nevada, Reno}{08/2026 -- Present}
+\begin{itemize}
+  \item Investigate whether current passing zone guidance gives drivers enough distance and time on high-speed rural two-lane roads, and how passing zone frequency, distribution, and length together affect safety.
+  \item Compare telematic trajectory data with MUTCD, AASHTO, and NCHRP 605 criteria, and check existing markings against the MUTCD criteria.
+  \item Use NDOT crash data to back up the observed data.
+\end{itemize}
+
+\entry{The Role of Smart Infrastructure in Supporting Sustainable Urban Mobility \sep{} Analysis, ITS, Synchro}{12/2025}
+\begin{itemize}
+  \item Demonstrated the role of smart infrastructure in advancing sustainable urban mobility, along with the environmental and sustainable solution approach.
+  \item Explored new monitoring systems and advanced technologies, and evaluated their impacts on urban mobility change.
+  \item Discussed opportunities and challenges for cities seeking to build equity, sustainability, and reliability.
+\end{itemize}
+
+\entry{Traffic Analysis on Intersection I-880 and 101 South \sep{} Project Planning, Critical Thinking}{12/2025}
+\begin{itemize}
+  \item Conducted a comprehensive analysis of traffic congestion and accidents, and recommended appropriate alternatives following the civil engineering systems approach.
+  \item Evaluated existing traffic and peak-hour movements to understand key constraints and system boundaries.
+  \item Provided an approach to shape functional, sustainable solutions that support users' needs.
+\end{itemize}
+
+\entry{Emerging Modes of Transportation \sep{} Research Analysis}{10/2024}
+\begin{itemize}
+  \item Conducted a research analysis on emerging modes of transportation; collected and analyzed transportation reports and societal impacts on urban mobility.
+  \item Provided insights into future mobility, presenting faster, more efficient, and environmentally sustainable alternatives to conventional methods.
+  \item Evaluated emerging modes in terms of carbon footprint, energy efficiency, and potential for reducing emissions.
+  \item Analyzed the LiDAR, cameras, radar, and sensors installed in Waymo autonomous vehicles.
+\end{itemize}
+
+\end{document}
